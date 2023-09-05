@@ -1,0 +1,121 @@
+/* Styles defaults */
+:root{
+    --light: 300;
+    --regular: 400;
+    --bold: 600;
+}
+
+/* Main general */
+.main {
+    background-color: #ffafcc;
+    width: 100%;
+    height: 100vh;
+}
+
+.main__div--general{
+    width: 100%;
+    height: 100%;
+    min-height: 70rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Logo styles */
+.div__div--Logo{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.div__picture--Logo{
+    width: 20vw;
+    min-width: 20rem;
+}
+
+.picture__img--Logo{
+    max-width: 100%;
+    height: auto;
+}
+
+.div__span--Logo{
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: var(--bold);
+
+}
+
+/* Section Encales styles */
+.div__div--Enlaces{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__ul--Enlaces{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul__li--Enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.li__a--Enlaces {
+    width: 30rem;
+    height: 6rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    /* Styles */
+    color: #000000;
+    background-color: #f3cde2;
+    border: 2px solid #618372;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.li__a--Enlaces:hover{
+    box-shadow: 1px 1px #618372, 2px 2px #618372, 3px 3px #618372; /* Sombra en el color base */
+    transform: translateX(-3px);
+    border: 2px solid #618372; /* Borde en el color base al pasar el cursor */
+}
+
+.a__span--Enlaces {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-weight: 500;
+}
+
+.a__img--Enlaces {
+    width: clamp(2vw, 4vw, 5.5rem);
+    min-width: 5rem;
+}
+
+.a__img--Enlaces--Spotify{
+    width: clamp(2vw, 4vw, 4.5rem);
+    min-width: 4rem;
+}
